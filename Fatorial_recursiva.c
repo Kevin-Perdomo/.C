@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fatorial (int n)
+long int fatorial (int n)
 {
 	if ((n == 0) || (n == 1))
 	return(1);
@@ -11,10 +11,15 @@ int fatorial (int n)
 
 int main()
 {
-	int numero, resultado;
+	int numero;
+	long int resultado;
 	printf("\n\t Digite o numero que deseja calcular e comfirme com Enter : ");
 	scanf("%d",&numero);
-	resultado = fatorial(numero);
-	printf("\n\t %d \n\n", resultado);
+	if (numero >= 0){
+			resultado = fatorial(numero);
+			printf("\n\t %ld \n\n", resultado);
+	} else {
+		printf("\n\t Nao existe fatorial de numero negativo \n\n");
+	}
     return 0;
 }

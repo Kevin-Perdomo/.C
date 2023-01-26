@@ -23,11 +23,13 @@ int main()
 	if (posicao > 0)
 	{
 		resultado = fibonacci(posicao);
-		printf("\n\t Resultado: %d", resultado);
+		printf("\n\n Resultado: %d \n\n", resultado);
 	}
 	else
 	{
-		return printf("\n Esta posiçao nao existe na sequencia de Fibonacci");
+		return printf("\n\n Esta posiçao nao existe na sequencia de Fibonacci \n\n");
 	}
+
+	system("pause");
 	return 0;
 }

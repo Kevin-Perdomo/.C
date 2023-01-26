@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Lógica do calculo
 long int fatorial (int n)
 {
 	if ((n == 0) || (n == 1))
@@ -18,13 +19,14 @@ int main()
 	scanf("%d",&numero);
 
 	if (numero >= 0)
-	{	
+	{
 		resultado = fatorial(numero);
 		printf("\n\t %ld \n\n", resultado);
-	} else
-	     {
-		 	printf("\n\t Nao existe fatorial de numero negativo \n\n");
-		 }
+	}else
+	 {
+		printf("\n\t Nao existe fatorial de numero negativo \n\n");
+	 }
 
+	system("pause");
     return 0;
 }

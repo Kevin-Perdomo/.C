@@ -29,6 +29,7 @@ int main (){
             break;
 
         }
+
     }while(z != 3);
 
  printf("\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
@@ -100,6 +101,7 @@ void caso1(){
         resto=log(j)/log(2);
        
         if(resto - (int)resto == 0){
+
             n_um = 0;
             controller=0;
             
@@ -152,6 +154,7 @@ void caso2()
 
             printf("\nDigite o dado %d: ", m+1);
             scanf("%d", &original[m]);
+
         }while(original[m]!=0 && original[m]!=1);
     }
     

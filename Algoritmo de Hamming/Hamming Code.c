@@ -115,7 +115,7 @@ void caso1(){
                 if(controller==j-1){
 
                     controller=0;
-                    i=i+j;
+                    i = i + j;
                 }
                 else{
                     controller++;

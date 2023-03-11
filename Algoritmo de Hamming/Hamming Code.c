@@ -6,29 +6,33 @@ void caso1();
 void caso2();
 
 int main (){
-
-    int z = 0;
-    printf("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-    printf("\n\n..:: GERADOR E VERIFICADOR DE CODIGO DE HAMMING ::..\n\n");
-    printf("Digite a opcao desejada:\n\n");
-    printf("1) Enviar um grupo de bits\n\n");
-    printf("2) Verificar um grupo de bits recebido\n\n");
-    printf("Option: ");
-    scanf("%d", &z);
     
-    switch (z){
-        case 1 :
-        caso1();
-        break;
+    int z = 0;
+    do{
+        printf("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+        printf("\n\n..:: GERADOR E VERIFICADOR DE CODIGO DE HAMMING ::..\n\n");
+        printf("Digite a opcao desejada:\n\n");
+        printf("1) Enviar um grupo de bits\n\n");
+        printf("2) Verificar um grupo de bits recebido\n\n");
+        printf("3) Para encerrar o programa\n\n");
+        printf("Option: ");
+        scanf("%d", &z);
         
-        case 2 :
-        caso2();
-        break;
+        switch (z){
 
-        default :
-        printf ("\nValor invalido!\n\n");
-    }
-    return 0;
+            case 1 :
+            caso1();
+            break;
+            
+            case 2 :
+            caso2();
+            break;
+
+        }
+    }while(z != 3);
+
+ printf("\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+ return 0;
 }
 
 void caso1(){
@@ -128,7 +132,7 @@ void caso1(){
 
         printf("%d", paridade[j]);
     }
-    printf("\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+    printf("\n\n");
 }
 
 void caso2()
@@ -239,5 +243,5 @@ void caso2()
             printf("%d", original[i-1]);
         }  
     }
-    printf("\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+    printf("\n\n");
 }

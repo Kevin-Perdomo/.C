@@ -91,7 +91,7 @@ void caso1(){
         }
         else{
 
-            paridade[j-1]=original[controller];
+            paridade[j-1] = original[controller];
             controller++;
         }            
     }

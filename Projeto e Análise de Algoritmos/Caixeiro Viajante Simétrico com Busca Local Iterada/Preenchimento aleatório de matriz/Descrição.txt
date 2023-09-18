@@ -1,0 +1,1 @@
+Preenchimento aleatório de matriz simétrica com a diagonal principal nula

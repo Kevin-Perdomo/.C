@@ -105,6 +105,7 @@ int main() {
         int custo_atual = calcular_custo(rota, num_cidades, matriz_distancias);
         if (custo_atual < melhor_custo) {
             melhor_custo = custo_atual;
+            printf("Melhor custo global: %d\n", melhor_custo);
         }
         
         // Perturbação: embaralhar parte da solução atual

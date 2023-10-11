@@ -31,9 +31,10 @@ int main (){
     scanf("%d", &numero);
     resultado = teste_primo(numero);
 
+    //if() com apenas uma linha de comando dentro não precisa de chaves 
     if(resultado == 1)
     printf("\n O número %d é primo \n\n", numero);
-    if(resultado == 0) //Poderia ser 'else' apenas
+    if(resultado == 0) 
     printf("\n O número %d não é primo \n\n", numero);
 
     system("pause");
